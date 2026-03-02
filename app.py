@@ -62,7 +62,7 @@ if uploaded_file:
         st.error("🚫 Free version limited to 100MB")
         st.info("💰 **Go Pro for unlimited processing + EDL export**")
         if st.button("Get CutFinder Pro - \$29"):
-            st.markdown("[Buy on Gumroad](https://your-gumroad-link.com)", unsafe_allow_html=True)
+            t.markdown("[Buy on Gumroad](https://kehsiaocube.gumroad.com/l/iufrqd)", unsafe_allow_html=True)
     else:
         with st.spinner("Analyzing video..."):
             with tempfile.NamedTemporaryFile(delete=False, suffix='.mp4') as tmp:
@@ -87,4 +87,5 @@ if uploaded_file:
             data=edl_content,
             file_name="cuts.edl",
             mime="text/plain"
+
         )
